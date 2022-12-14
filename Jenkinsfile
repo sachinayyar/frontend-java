@@ -35,7 +35,7 @@ pipeline
                           openshift.newBuild("--name=frontend-java", "--docker-image=registry.redhat.io/jboss-eap-7/eap74-openjdk8-openshift-rhel7", "--binary") 
                              } 
     
-                       openshift.selector("bc", "frontend-java").startBuild("--from-file=target/jb-hello-world-maven-0.2.0-SNAPSHOT.jar", "--follow") 
+                       openshift.selector("bc", "frontend-java").startBuild("--from-file=target/works-with-heroku-1.0.jar", "--follow") 
                                    
                                } }
 
